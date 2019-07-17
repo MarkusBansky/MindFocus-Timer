@@ -11,21 +11,38 @@
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
         <customObject id="-3" userLabel="Application"/>
-        <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="PomodoroTimer" customModuleProvider="target">
+        <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="PomodoroTimer" customModuleProvider="target"/>
+        <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
+        <customObject id="o1x-Bm-WZh" customClass="StatusMenuController" customModule="PomodoroTimer" customModuleProvider="target">
             <connections>
-                <outlet property="statusMenu" destination="d4Y-Nv-Shw" id="8vJ-9V-bnO"/>
+                <outlet property="startMenuItem" destination="czP-sI-G3P" id="KTF-jt-JQw"/>
+                <outlet property="statusMenu" destination="d4Y-Nv-Shw" id="DQk-Mj-shg"/>
+                <outlet property="stopMenuItem" destination="8dV-ZJ-NLf" id="6XR-wz-oWO"/>
             </connections>
         </customObject>
-        <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
-        <menu id="d4Y-Nv-Shw">
+        <menu autoenablesItems="NO" id="d4Y-Nv-Shw">
             <items>
+                <menuItem title="Start" id="czP-sI-G3P">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="startPomodoroClicked:" target="o1x-Bm-WZh" id="L22-RC-19X"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="Stop Focusing" enabled="NO" id="8dV-ZJ-NLf">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="stopPomodoroClicked:" target="o1x-Bm-WZh" id="Sno-Vl-XS4"/>
+                    </connections>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="btm-JO-Dh3"/>
                 <menuItem title="Quit" id="m5V-lc-XQT">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
-                        <action selector="quitClicked:" target="Voe-Tx-rLC" id="A9p-5r-PX6"/>
+                        <action selector="quitClickedWithSender:" target="o1x-Bm-WZh" id="Ice-1O-akl"/>
                     </connections>
                 </menuItem>
             </items>
+            <point key="canvasLocation" x="-234" y="-144"/>
         </menu>
     </objects>
 </document>

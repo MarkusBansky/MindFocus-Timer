@@ -10,6 +10,8 @@
 		4D522DAB22DF1BDE00728C28 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D522DAA22DF1BDE00728C28 /* AppDelegate.swift */; };
 		4D522DAD22DF1BDF00728C28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D522DAC22DF1BDF00728C28 /* Assets.xcassets */; };
 		4D522DB022DF1BDF00728C28 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D522DAE22DF1BDF00728C28 /* MainMenu.xib */; };
+		4D522DB922DF2A0800728C28 /* StatusMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D522DB822DF2A0800728C28 /* StatusMenuController.swift */; };
+		4D522DBB22DF2C9F00728C28 /* PomodoroTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D522DBA22DF2C9F00728C28 /* PomodoroTimer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		4D522DAF22DF1BDF00728C28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		4D522DB122DF1BDF00728C28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4D522DB222DF1BDF00728C28 /* PomodoroTimer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PomodoroTimer.entitlements; sourceTree = "<group>"; };
+		4D522DB822DF2A0800728C28 /* StatusMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusMenuController.swift; sourceTree = "<group>"; };
+		4D522DBA22DF2C9F00728C28 /* PomodoroTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoroTimer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,8 @@
 				4D522DAE22DF1BDF00728C28 /* MainMenu.xib */,
 				4D522DB122DF1BDF00728C28 /* Info.plist */,
 				4D522DB222DF1BDF00728C28 /* PomodoroTimer.entitlements */,
+				4D522DB822DF2A0800728C28 /* StatusMenuController.swift */,
+				4D522DBA22DF2C9F00728C28 /* PomodoroTimer.swift */,
 			);
 			path = PomodoroTimer;
 			sourceTree = "<group>";
@@ -130,6 +136,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D522DBB22DF2C9F00728C28 /* PomodoroTimer.swift in Sources */,
+				4D522DB922DF2A0800728C28 /* StatusMenuController.swift in Sources */,
 				4D522DAB22DF1BDE00728C28 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
