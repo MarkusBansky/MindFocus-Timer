@@ -21,7 +21,12 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     
     // Insert code here to initialize your application
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-        statusItem.button?.title = "Pomodoro Timer"
+        // Load icon
+        let icon = NSImage(named: "StatusBarIcon")
+//        icon?.isTemplate = true // best for dark mode
+        
+        // Set menu
+        statusItem.button?.image = icon
         statusItem.menu = statusMenu
     }
 
