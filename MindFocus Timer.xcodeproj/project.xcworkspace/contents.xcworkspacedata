@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:PomodoroTimer.xcodeproj">
+      location = "self:/Users/mark/macosProjects/pomodoroTimer/PomodoroTimer/MindFocus Timer.xcodeproj">
    </FileRef>
 </Workspace>

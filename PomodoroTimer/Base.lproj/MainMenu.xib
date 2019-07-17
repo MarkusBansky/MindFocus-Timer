@@ -10,11 +10,12 @@
             </connections>
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
-        <customObject id="-3" userLabel="Application"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="PomodoroTimer" customModuleProvider="target"/>
         <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
         <customObject id="o1x-Bm-WZh" customClass="StatusMenuController" customModule="PomodoroTimer" customModuleProvider="target">
             <connections>
+                <outlet property="focusingStatusItem" destination="S2g-np-A7B" id="xqQ-gU-xcp"/>
                 <outlet property="startMenuItem" destination="czP-sI-G3P" id="KTF-jt-JQw"/>
                 <outlet property="statusMenu" destination="d4Y-Nv-Shw" id="DQk-Mj-shg"/>
                 <outlet property="stopMenuItem" destination="8dV-ZJ-NLf" id="6XR-wz-oWO"/>
@@ -22,6 +23,10 @@
         </customObject>
         <menu autoenablesItems="NO" id="d4Y-Nv-Shw">
             <items>
+                <menuItem title="Start timer to focus" enabled="NO" id="S2g-np-A7B">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="6Hh-0E-V4u"/>
                 <menuItem title="Start" id="czP-sI-G3P">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
@@ -42,7 +47,7 @@
                     </connections>
                 </menuItem>
             </items>
-            <point key="canvasLocation" x="-234" y="-144"/>
+            <point key="canvasLocation" x="-234.5" y="-154"/>
         </menu>
     </objects>
 </document>
