@@ -8,17 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		4D522DAB22DF1BDE00728C28 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D522DAA22DF1BDE00728C28 /* AppDelegate.swift */; };
-		4D522DAD22DF1BDF00728C28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D522DAC22DF1BDF00728C28 /* Assets.xcassets */; };
-		4D522DB022DF1BDF00728C28 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D522DAE22DF1BDF00728C28 /* MainMenu.xib */; };
 		4D522DB922DF2A0800728C28 /* StatusMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D522DB822DF2A0800728C28 /* StatusMenuController.swift */; };
 		4D522DBB22DF2C9F00728C28 /* PomodoroTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D522DBA22DF2C9F00728C28 /* PomodoroTimer.swift */; };
+		4DE0CE9522E0770C00AC3856 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D522DAC22DF1BDF00728C28 /* Assets.xcassets */; };
+		4DE0CE9722E078FC00AC3856 /* Application.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D522DAE22DF1BDF00728C28 /* Application.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4D522DA722DF1BDE00728C28 /* MindFocus Timer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MindFocus Timer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D522DAA22DF1BDE00728C28 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4D522DAC22DF1BDF00728C28 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		4D522DAF22DF1BDF00728C28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		4D522DAF22DF1BDF00728C28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/Application.xib; sourceTree = "<group>"; };
 		4D522DB122DF1BDF00728C28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4D522DB822DF2A0800728C28 /* StatusMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusMenuController.swift; sourceTree = "<group>"; };
 		4D522DBA22DF2C9F00728C28 /* PomodoroTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoroTimer.swift; sourceTree = "<group>"; };
@@ -56,14 +56,22 @@
 		4D522DA922DF1BDE00728C28 /* MindFocusTimer */ = {
 			isa = PBXGroup;
 			children = (
+				4DE0CE9A22E07FDF00AC3856 /* timericon */,
 				4D522DAA22DF1BDE00728C28 /* AppDelegate.swift */,
 				4D522DAC22DF1BDF00728C28 /* Assets.xcassets */,
-				4D522DAE22DF1BDF00728C28 /* MainMenu.xib */,
 				4D522DB122DF1BDF00728C28 /* Info.plist */,
-				4D522DB822DF2A0800728C28 /* StatusMenuController.swift */,
-				4D522DBA22DF2C9F00728C28 /* PomodoroTimer.swift */,
 			);
 			path = MindFocusTimer;
+			sourceTree = "<group>";
+		};
+		4DE0CE9A22E07FDF00AC3856 /* timericon */ = {
+			isa = PBXGroup;
+			children = (
+				4D522DAE22DF1BDF00728C28 /* Application.xib */,
+				4D522DBA22DF2C9F00728C28 /* PomodoroTimer.swift */,
+				4D522DB822DF2A0800728C28 /* StatusMenuController.swift */,
+			);
+			path = timericon;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,8 +140,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4D522DAD22DF1BDF00728C28 /* Assets.xcassets in Resources */,
-				4D522DB022DF1BDF00728C28 /* MainMenu.xib in Resources */,
+				4DE0CE9722E078FC00AC3856 /* Application.xib in Resources */,
+				4DE0CE9522E0770C00AC3856 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,12 +161,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		4D522DAE22DF1BDF00728C28 /* MainMenu.xib */ = {
+		4D522DAE22DF1BDF00728C28 /* Application.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				4D522DAF22DF1BDF00728C28 /* Base */,
 			);
-			name = MainMenu.xib;
+			name = Application.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -292,7 +300,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_BUNDLE_IDENTIFIER = markiian.benovskyi.mindfocustimer;
 				PRODUCT_NAME = "MindFocus Timer";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -313,7 +321,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_BUNDLE_IDENTIFIER = markiian.benovskyi.mindfocustimer;
 				PRODUCT_NAME = "MindFocus Timer";
 				PROVISIONING_PROFILE_SPECIFIER = "";
