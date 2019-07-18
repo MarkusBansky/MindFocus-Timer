@@ -20,9 +20,9 @@
 		4D522DAC22DF1BDF00728C28 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4D522DAF22DF1BDF00728C28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		4D522DB122DF1BDF00728C28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4D522DB222DF1BDF00728C28 /* PomodoroTimer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PomodoroTimer.entitlements; sourceTree = "<group>"; };
 		4D522DB822DF2A0800728C28 /* StatusMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusMenuController.swift; sourceTree = "<group>"; };
 		4D522DBA22DF2C9F00728C28 /* PomodoroTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoroTimer.swift; sourceTree = "<group>"; };
+		4DE0CE9022E0666100AC3856 /* MindFocus Timer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "MindFocus Timer.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,7 +39,8 @@
 		4D522D9E22DF1BDE00728C28 = {
 			isa = PBXGroup;
 			children = (
-				4D522DA922DF1BDE00728C28 /* PomodoroTimer */,
+				4DE0CE9022E0666100AC3856 /* MindFocus Timer.entitlements */,
+				4D522DA922DF1BDE00728C28 /* MindFocusTimer */,
 				4D522DA822DF1BDE00728C28 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -52,18 +53,17 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		4D522DA922DF1BDE00728C28 /* PomodoroTimer */ = {
+		4D522DA922DF1BDE00728C28 /* MindFocusTimer */ = {
 			isa = PBXGroup;
 			children = (
 				4D522DAA22DF1BDE00728C28 /* AppDelegate.swift */,
 				4D522DAC22DF1BDF00728C28 /* Assets.xcassets */,
 				4D522DAE22DF1BDF00728C28 /* MainMenu.xib */,
 				4D522DB122DF1BDF00728C28 /* Info.plist */,
-				4D522DB222DF1BDF00728C28 /* PomodoroTimer.entitlements */,
 				4D522DB822DF2A0800728C28 /* StatusMenuController.swift */,
 				4D522DBA22DF2C9F00728C28 /* PomodoroTimer.swift */,
 			);
-			path = PomodoroTimer;
+			path = MindFocusTimer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -100,6 +100,9 @@
 						CreatedOnToolsVersion = 10.2.1;
 						SystemCapabilities = {
 							com.apple.HardenedRuntime = {
+								enabled = 0;
+							};
+							com.apple.Sandbox = {
 								enabled = 0;
 							};
 						};
@@ -280,11 +283,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = PomodoroTimer/PomodoroTimer.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = B6YEWDE459;
-				INFOPLIST_FILE = PomodoroTimer/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/MindFocusTimer/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -292,6 +295,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = markiian.benovskyi.mindfocustimer;
 				PRODUCT_NAME = "MindFocus Timer";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -300,11 +304,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = PomodoroTimer/PomodoroTimer.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = B6YEWDE459;
-				INFOPLIST_FILE = PomodoroTimer/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/MindFocusTimer/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -312,6 +316,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = markiian.benovskyi.mindfocustimer;
 				PRODUCT_NAME = "MindFocus Timer";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
